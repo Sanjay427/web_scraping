@@ -8,8 +8,8 @@ class Database:
     def __init__(self):
         try:
             self.connection = mysql.connector.connect(
-                    host='localhost',
-                    user='sanjay',
+                    host='', # mysql hostname
+                    user='', #mysql username
                     database='player_info'
                     )
             self.cursor = self.connection.cursor()
